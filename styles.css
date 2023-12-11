@@ -20,6 +20,10 @@ a {
     display: inline-block;
 }
 
+p {
+    margin: 0;
+}
+
 img {
     width: 100%;
     display: block;
@@ -148,12 +152,15 @@ fill: none;
 }
 
 .section-2-description {
-        text-align: center;
         font-family: Readex Pro;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.2;
         margin-bottom: 56px;
+        max-width: 627px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .section-2-list-container {
@@ -168,8 +175,11 @@ fill: none;
     max-width: 639px;
 }
 
-.section-2-list-1-item {
-    max-width: 639px;
+.section-2-list-1-item-1, .section-2-list-1-item-2  {
+    min-width: 639px;
+    box-shadow: 5px 5px 15px gray, -5px -5px 15px gray;
+    border-radius: 10px;
+
 }
 
 .section-2-list-2 {
@@ -181,4 +191,94 @@ fill: none;
 flex-basis: calc((100% - 16px) / 2);
 padding-top: 114px;
 padding-bottom: 144px;
+box-shadow: 5px 5px 15px gray, -5px -5px 15px gray;
+border-radius: 10px;
+}
+
+.section-2-list-1-item-title-1, .section-2-list-1-item-title-2, 
+.section-2-list-2-item-title-1, .section-2-list-2-item-title-2 {
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.2; 
+}
+
+.section-2-list-1-item-description-1, .section-2-list-1-item-description-2,
+.section-2-list-2-item-description-1, .section-2-list-2-item-description-2 {
+font-family: Readex Pro;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.2; 
+}
+
+
+.section-2-list-1-item-1, .section-2-list-1-item-2 {
+    padding: 0 42px;
+}
+
+.section-2-list-1-item-title-1 {
+    max-width: 60px;
+    margin-left: auto;
+}
+
+.section-2-list-1-item-description-1 {
+    max-width: 192px;
+    margin-left: auto;
+}
+
+.section-2-list-1-item-2 {
+    display: flex;
+    align-items: center;
+}
+
+.section-2-list-1-item-title-2 {
+max-width: 47px;
+display: block;
+margin-left: auto;
+}
+
+.section-2-list-1-item-description-2 {
+    text-align: end;
+}
+
+.section-2-list-1-item-img-2 {
+    max-width: 381px;
+}
+
+
+.section-2-list-2-item {
+    padding-left: 16px;
+    max-height: 800px;
+}
+
+.section-2-list-2-item-img-1 {
+    margin-bottom: 41px;
+}
+
+.section-2-list-2-item-title-1 {
+text-align: center;
+font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.28;
+}
+
+.section-2-list-2-item-description-1 {
+font-family: Readex Pro;
+font-size: 32px;
+font-weight: 400;
+line-height: 1.28; 
+max-width: 250px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.section-2-list-2-item-title-2 {
+    text-align: center;
+}
+
+.section-2-list-2-item-description-2 {
+    text-align: center;
+    margin-bottom: 42px;
 }
