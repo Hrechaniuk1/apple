@@ -135,6 +135,11 @@ fill: none;
         font-weight: 400;
         line-height: 1.2;
         text-transform: capitalize;
+    transition: background-color 250ms ease-in-out;
+}
+
+.section-1-btn:hover {
+    background-color: whitesmoke;
 }
 
 /* ===================section 2==================== */
@@ -281,4 +286,161 @@ text-align: center;
 .section-2-list-2-item-description-2 {
     text-align: center;
     margin-bottom: 42px;
+}
+
+/* =====================section 3======================== */
+.section-3 {
+    padding-top: 72px;
+    padding-bottom: 28px;
+}
+
+.section-3-title {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 8px;
+}
+
+.section-3-description {
+    color: #000;
+        font-family: Readex Pro;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.29px;
+        margin-bottom: 31px;
+        text-align: center;
+}
+
+.section-3-product-list {
+    display: flex;
+    gap: 27px;
+}
+
+.section-3-product-list-item {
+    flex-basis: calc((100% - 81px) / 4);
+}
+
+.product-list-img-container {
+    padding: 28px;
+    margin-bottom: 37px;
+}
+
+.product-list-item-name {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.25px;
+        margin-bottom: 20px;
+}
+
+.product-list-item-description {
+    color: #4B4B4B;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 10px;
+}
+
+.product-list-item-price {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2;
+}
+
+/* ====================section 4======================== */
+.section-4 {
+    padding-top: 37px;
+    padding-bottom: 28px;
+}
+
+.section-4-title {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 10px;
+}
+
+.section-4-description {
+        text-align: center;
+        font-family: Readex Pro;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.29;
+        margin-bottom: 56px;
+}
+
+.section-4-list {
+    display: flex;
+    gap: 27px;
+}
+
+.section-4-list-item {
+    flex-basis: calc((100% - 54px) / 3);
+    background-color: #F8F9FA;
+    padding-top: 41px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+.section-4-list-item-description {
+        text-align: center;
+        font-family: Readex Pro;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.29;
+}
+
+.section-4-list-item-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 30px;
+}
+
+.section-4-list-item-btn {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        border: 1px solid #000;
+        border-radius: 200px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-transform: capitalize;
+        transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.section-4-list-item-btn:hover {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px 1px gray, -2px -2px 10px 1px gray;
+}
+
+/* ===================section 5============================ */
+.section-5 {
+    padding-top: 55px;
+    padding-bottom: 24px;
+}
+
+.section-5-title {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 10px;
+}
+
+.section-5-description {
+        text-align: center;
+        font-family: Readex Pro;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.29;
+        margin-bottom: 56px;
 }
