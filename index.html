@@ -27,7 +27,20 @@
           </a>
           <ul class="main-nav-link-list">
             <li><a class="main-nav-link-list-item" href="">all products</a></li>
-            <li><a class="main-nav-link-list-item">Solutions</a></li>
+            <li class="solutions-item">
+              <label class="solutions-label" for="solutions">Solutions</label>
+              <input
+                class="solutions-input"
+                type="checkbox"
+                name=""
+                id="solutions"
+              />
+              <ul class="solutions-list">
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+              </ul>
+            </li>
             <li><a class="main-nav-link-list-item" href="">ABOUT</a></li>
             <li><a class="main-nav-link-list-item" href="">Support</a></li>
           </ul>
@@ -269,14 +282,16 @@
           Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
         </p>
         <div>
-          <label>
-            <svg width="30" height="30">
-              <use href="./image/symbol-defs.svg#more-icon"></use>
+          <label class="see-all-fake" for="see-all">
+            See All
+            <svg class="see-all-svg" width="26" height="26">
+              <use href="./image/symbol-defs.svg#icon-more-icon"></use>
             </svg>
-            <input type="checkbox" />
           </label>
-          <div>
+          <input class="see-all-checkbox" id="see-all" type="checkbox" />
+          <div class="section-5-item">
             <img
+              class="section-5-item-img"
               srcset="
                 ./image/section-5/section-5-img.jpg    1x,
                 ./image/section-5/section-5-img@2x.jpg 2x
@@ -285,18 +300,23 @@
               alt=""
             />
             <ul>
-              <li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
-              <li>Road Design Handbook For The International Road...</li>
-              <li>The Best Kept Secrets About Creative People</li>
-              <li>
+              <li class="section-5-list-item">
+                Road Design Handbook For The International Road...
+              </li>
+              <li class="section-5-list-item">
+                The Best Kept Secrets About Creative People
+              </li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
             </ul>
           </div>
-          <div>
+          <div class="section-5-item section-5-item-hidden">
             <img
+              class="section-5-item-img"
               srcset="
                 ./image/section-5/section-5-img.jpg    1x,
                 ./image/section-5/section-5-img@2x.jpg 2x
@@ -305,18 +325,23 @@
               alt=""
             />
             <ul>
-              <li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
-              <li>Road Design Handbook For The International Road...</li>
-              <li>The Best Kept Secrets About Creative People</li>
-              <li>
+              <li class="section-5-list-item">
+                Road Design Handbook For The International Road...
+              </li>
+              <li class="section-5-list-item">
+                The Best Kept Secrets About Creative People
+              </li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
             </ul>
           </div>
-          <div>
+          <div class="section-5-item section-5-item-hidden">
             <img
+              class="section-5-item-img"
               srcset="
                 ./image/section-5/section-5-img.jpg    1x,
                 ./image/section-5/section-5-img@2x.jpg 2x
@@ -325,12 +350,16 @@
               alt=""
             />
             <ul>
-              <li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
-              <li>Road Design Handbook For The International Road...</li>
-              <li>The Best Kept Secrets About Creative People</li>
-              <li>
+              <li class="section-5-list-item">
+                Road Design Handbook For The International Road...
+              </li>
+              <li class="section-5-list-item">
+                The Best Kept Secrets About Creative People
+              </li>
+              <li class="section-5-list-item">
                 We Make It Easy To Find The Great Design Talent, Easier...
               </li>
             </ul>
@@ -338,72 +367,99 @@
         </div>
       </div>
     </section>
-    <section class="container">
-      <h2>Looking for anything else?</h2>
-      <input type="search" placeholder="Search keyword" />
-    </section>
-    <section>
-      <h2>Never miss a thing</h2>
-      <p>
-        Sign up for texts to be notified about our best offers on the perfect
-        gifts.
-      </p>
-      <img
-        srcset="
-          ./image/section-4/section-4-phones.png    1x,
-          ./image/section-4/section-4-phones@2x.png 2x
-        "
-        src="./image/section-4/section-4-phones.png"
-        alt=""
-      />
-      <form>
-        <div>
-          <input type="email" placeholder="Your email" />
-          <svg width="30" height="29">
-            <use href="./image/symbol-defs.svg#search-icon"></use>
+    <section class="section-6">
+      <div class="container">
+        <h2 class="section-6-title">Looking for anything else?</h2>
+        <div class="search-container">
+          <input
+            class="section-6-search"
+            type="search"
+            placeholder="Search keyword"
+          />
+          <svg class="search-icon" width="30" height="30">
+            <use href="./image/symbol-defs.svg#icon-search-icon"></use>
           </svg>
         </div>
-        <button>Sign up</button>
-      </form>
+      </div>
     </section>
-    <footer class="container">
-      <nav>
-        <a href="">
-          <svg width="181" height="22">
-            <use href="./image/symbol-defs.svg#logo"></use>
-          </svg>
-        </a>
-        <p>
-          Sign up for texts to be notified about our best offers on the perfect
-          gifts.
-        </p>
-        <ul>
-          <li><a href="">All products</a></li>
-          <li><a href="">Phones</a></li>
-          <li><a href=""></a>Watch</li>
-          <li><a href=""></a>Tablet</li>
-          <li><a href=""></a>Laptops</li>
-        </ul>
-        <ul>
-          <li><a href="">Company</a></li>
-          <li><a href="">About</a></li>
-          <li><a href=""></a>Support</li>
-        </ul>
-        <ul>
-          <li><a href="">Support</a></li>
-          <li><a href=""></a>Style Guide</li>
-          <li><a href=""></a>Licensing</li>
-          <li><a href=""></a>Change Log</li>
-          <li><a href=""></a>Contact</li>
-        </ul>
-        <ul>
-          <li><a href="">Follow Us</a></li>
-          <li><a href=""></a>Instagram</li>
-          <li><a href=""></a>Facebook</li>
-          <li><a href=""></a>LinkedIn</li>
-          <li><a href=""></a>Youtube</li>
-        </ul>
-      </nav>
+    <section class="section-7">
+      <div class="container">
+        <div class="section-7-add-container">
+          <h2 class="section-7-title">Never miss a thing</h2>
+          <p class="section-7-description">
+            Sign up for texts to be notified about our best offers on the
+            perfect gifts.
+          </p>
+          <img
+            class="section-7-img"
+            srcset="
+              ./image/section-4/section-4-phones.png    1x,
+              ./image/section-4/section-4-phones@2x.png 2x
+            "
+            src="./image/section-4/section-4-phones.png"
+            alt=""
+          />
+          <form class="section-7-form">
+            <input
+              class="section-7-form-input"
+              type="email"
+              placeholder="Your email"
+            />
+            <button class="section-7-form-btn" type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
+        <nav class="footer-nav">
+          <div>
+            <a class="footer-logo" href="">
+              <svg width="181" height="22">
+                <use href="./image/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="footer-description">
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+          <ul class="footer-link-list">
+            <li class="footer-link-list-item footer-link-list-item-main">
+              <a href="">All products</a>
+            </li>
+            <li class="footer-link-list-item"><a href="">Phones</a></li>
+            <li class="footer-link-list-item"><a href=""></a>Watch</li>
+            <li class="footer-link-list-item"><a href=""></a>Tablet</li>
+            <li class="footer-link-list-item"><a href=""></a>Laptops</li>
+          </ul>
+          <ul class="footer-link-list">
+            <li class="footer-link-list-item footer-link-list-item-main">
+              <a href="">Company</a>
+            </li>
+            <li class="footer-link-list-item"><a href="">About</a></li>
+            <li class="footer-link-list-item"><a href=""></a>Support</li>
+          </ul>
+          <ul class="footer-link-list">
+            <li class="footer-link-list-item footer-link-list-item-main">
+              <a href="">Support</a>
+            </li>
+            <li class="footer-link-list-item"><a href=""></a>Style Guide</li>
+            <li class="footer-link-list-item"><a href=""></a>Licensing</li>
+            <li class="footer-link-list-item"><a href=""></a>Change Log</li>
+            <li class="footer-link-list-item"><a href=""></a>Contact</li>
+          </ul>
+          <ul class="footer-link-list">
+            <li class="footer-link-list-item footer-link-list-item-main">
+              <a href="">Follow Us</a>
+            </li>
+            <li class="footer-link-list-item"><a href=""></a>Instagram</li>
+            <li class="footer-link-list-item"><a href=""></a>Facebook</li>
+            <li class="footer-link-list-item"><a href=""></a>LinkedIn</li>
+            <li class="footer-link-list-item"><a href=""></a>Youtube</li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
