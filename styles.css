@@ -188,7 +188,7 @@ fill: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    max-width: 170px;
     height: 50px;
     margin-right: auto;
     border: 1px solid #000;
@@ -232,7 +232,8 @@ fill: none;
 
 .section-2-list-container {
     display: flex;
-    gap: 16px;
+justify-content: center;    
+gap: 16px;
 }
 
 .section-2-list-1 {
@@ -243,7 +244,7 @@ fill: none;
 }
 
 .section-2-list-1-item-1, .section-2-list-1-item-2  {
-    min-width: 639px;
+    max-width: 639px;
     box-shadow: 5px 5px 15px gray, -5px -5px 15px gray;
     border-radius: 10px;
 
@@ -252,6 +253,7 @@ fill: none;
 .section-2-list-2 {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .section-2-list-2-item {
@@ -311,6 +313,7 @@ margin-left: auto;
 .section-2-list-1-item-img-2 {
     max-width: 381px;
 }
+
 
 
 .section-2-list-2-item {
@@ -376,11 +379,14 @@ text-align: center;
 
 .section-3-product-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 27px;
+    justify-content: center;
 }
 
 .section-3-product-list-item {
     flex-basis: calc((100% - 81px) / 4);
+    min-width: 200px;
 }
 
 .product-list-img-container {
@@ -435,10 +441,13 @@ text-align: center;
 .section-4-list {
     display: flex;
     gap: 27px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-4-list-item {
     flex-basis: calc((100% - 54px) / 3);
+    min-width: 200px;
     background-color: #F8F9FA;
     padding-top: 41px;
     padding-left: 29px;
@@ -465,7 +474,7 @@ text-align: center;
     display: flex;
         justify-content: center;
         align-items: center;
-        width: 190px;
+        max-width: 190px;
         height: 50px;
         margin-right: auto;
         margin-left: auto;
@@ -479,9 +488,14 @@ text-align: center;
         transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
+
 .section-4-list-item-btn:hover {
     background-color: whitesmoke;
     box-shadow: 2px 2px 10px 1px gray, -2px -2px 10px 1px gray;
+}
+
+.section-4-list-img {
+    max-height: 250px;
 }
 
 /* ===================section 5============================ */
@@ -554,6 +568,7 @@ position: static;
 
 .section-5-item-img {
     max-width: 620px;
+    flex-shrink: 1;
 }
 
 .section-5-list-item {
@@ -580,27 +595,27 @@ line-height: 1.25;
 }
 
 .section-6-search {
-    width: 650px;
+    width: 100%;
         height: 60px;
         flex-shrink: 0;
     border-radius: 100px;
         border: 1px solid #C5C5C5;
         background: #F8F9FA;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     padding-left: 67px;
     padding-right: 20px;
 }
 
 .search-container {
     position: relative;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .search-icon {
     position: absolute;
     top: 15px;
-    left: 330px;
+    left: 25px;
     fill: none;
     stroke: #000000;
 }
@@ -719,4 +734,81 @@ line-height: 1.25;
 
 .footer-link-list-item:hover {
     color: #DCE5E2;
+}
+
+
+/* ===================media================= */
+@media (max-width: 1050px) {
+    /* general */
+
+
+    /* header */
+    .main-nav-link-list, .footer-link-list {
+        display: none;
+    }
+
+    /* section 1 */
+.section-1-main-container {
+    padding-left: 26px;
+    background-image: linear-gradient(rgba(220, 229, 226, 0.7), rgba(220, 229, 226, 0.7)), url(./image/section-1/section-1-bg-img.png);
+    background-position: center, bottom 0 right 40px;
+}
+
+/* section 2 */
+     .section-2-list-container {
+        flex-wrap: wrap;
+}
+/* section 5 */
+.section-5-item {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* section 7 */
+.section-7-form {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.section-7-form-input {
+    border-radius: 54px 54px 54px 54px;
+}
+
+.section-7-form-btn {
+    border-radius: 200px 200px 200px 200px;
+}
+
+
+}
+
+@media (max-width: 700px) {
+/* header*/
+.logo-icon, .footer-logo-icon {
+        width: 100px;
+    }
+
+    /* section 1 */
+
+    .section-1-main-container {
+background-size: auto, 300px;
+padding-left: 15    px;
+        }
+
+    .section-1-title {
+            font-size: 38px;
+            text-align: center;
+
+        }
+    
+        .section-1-description {
+            font-weight: 400;
+            line-height: 1.2;
+            display: block;
+            max-width: 565px;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        .section-2-list-1-item-2 {
+            flex-wrap: wrap;
+        }
 }
