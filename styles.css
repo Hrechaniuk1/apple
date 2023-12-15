@@ -37,6 +37,14 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+.mob-menu-open-btn {
+    display: none;
+}
+
 /* =====================header==================== */
 .main-nav {
     display: flex;
@@ -746,6 +754,113 @@ line-height: 1.25;
     .main-nav-link-list, .footer-link-list {
         display: none;
     }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        background-color: #DCE5E2;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+.mobile-nav-link-list {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+            
+
+    .mob-menu-open-btn {
+        display: block;
+        padding: 0;
+        letter-spacing: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .mob-menu-open-btn-icon {
+        stroke: #4B4B4B;
+    }
+
+    .mob-close-menu-btn {
+    display: block;
+        padding: 0;
+        letter-spacing: 0;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .mob-close-menu-btn-icon {
+        fill: #4B4B4B;
+    }
+
+        .mobile-solutions-input {
+            display: none;
+        }
+    
+       
+    
+        .mobile-solutions-item {
+    
+            cursor: pointer;
+        }
+    
+        .mobile-solutions-label {
+            cursor: pointer;
+            transition: color 250ms ease-in-out;
+        }
+
+    
+        .mobile-solutions-item {
+            position: relative;
+        }
+    
+        .mobile-solutions-item::after {
+            content: "^";
+            display: block;
+            rotate: 180deg;
+            font-size: 24px;
+            position: absolute;
+            top: -7px;
+            right: -12px;
+        }
+    
+        .mobile-solutions-list {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0px;
+            visibility: hidden;
+            pointer-events: none;
+        }
+ .mobile-solutions-input:checked ~ .mobile-solutions-list {
+     visibility: visible;
+     pointer-events: all;
+     position: static;
+ }
+
+    
+        .mobile-solutions-list-item {
+            transition: color 250ms ease-in-out;
+        }
+    
+        .solutions-list li:not(:last-child) {
+            margin-bottom: 10px;
+        }
 
     /* section 1 */
 .section-1-main-container {
