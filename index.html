@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
     <title>Apple</title>
+    <script src="./js/select-menu.js" type="module" defer></script>
+    <script src="./js/mob-menu.js" type="module" defer></script>
+    <script src="./js/see-all.js" type="module" defer></script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +28,7 @@
               <use href="./image/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
-          <button class="mob-menu-open-btn" type="button" data-modal-open>
+          <button class="mob-menu-open-btn" type="button">
             <svg class="mob-menu-open-btn-icon" width="30" height="30">
               <use href="./image/symbol-defs.svg#icon-mob-menu"></use>
             </svg>
@@ -285,92 +288,94 @@
           Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
         </p>
         <div>
-          <label class="see-all-fake" for="see-all">
+          <button class="see-all-btn" type="button">
             See All
             <svg class="see-all-svg" width="26" height="26">
               <use href="./image/symbol-defs.svg#icon-more-icon"></use>
             </svg>
-          </label>
-          <input
+          </button>
+          <!-- <input
             class="see-all-checkbox"
             id="see-all"
             type="checkbox"
             name="see-all"
-          />
-          <div class="section-5-item">
-            <img
-              class="section-5-item-img"
-              srcset="
+          /> -->
+          <div class="see-all-list">
+            <div class="section-5-item">
+              <img
+                class="section-5-item-img"
+                srcset="
                 ./image/section-5/section-5-img.jpg x1,
                 ./image/section-5/section-5-img@2x.jpg x2
               "
-              src="./image/section-5/section-5-img.jpg"
-              alt=""
-            />
-            <ul>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-              <li class="section-5-list-item">
-                Road Design Handbook For The International Road...
-              </li>
-              <li class="section-5-list-item">
-                The Best Kept Secrets About Creative People
-              </li>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-            </ul>
-          </div>
-          <div class="section-5-item section-5-item-hidden">
-            <img
-              class="section-5-item-img"
-              srcset="
+                src="./image/section-5/section-5-img.jpg"
+                alt=""
+              />
+              <ul>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+                <li class="section-5-list-item">
+                  Road Design Handbook For The International Road...
+                </li>
+                <li class="section-5-list-item">
+                  The Best Kept Secrets About Creative People
+                </li>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+              </ul>
+            </div>
+            <div class="section-5-item section-5-item-hidden">
+              <img
+                class="section-5-item-img"
+                srcset="
                 ./image/section-5/section-5-img.jpg x1,
                 ./image/section-5/section-5-img@2x.jpg x2
               "
-              src="./image/section-5/section-5-img.jpg"
-              alt=""
-            />
-            <ul>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-              <li class="section-5-list-item">
-                Road Design Handbook For The International Road...
-              </li>
-              <li class="section-5-list-item">
-                The Best Kept Secrets About Creative People
-              </li>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-            </ul>
-          </div>
-          <div class="section-5-item section-5-item-hidden">
-            <img
-              class="section-5-item-img"
-              srcset="
+                src="./image/section-5/section-5-img.jpg"
+                alt=""
+              />
+              <ul>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+                <li class="section-5-list-item">
+                  Road Design Handbook For The International Road...
+                </li>
+                <li class="section-5-list-item">
+                  The Best Kept Secrets About Creative People
+                </li>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+              </ul>
+            </div>
+            <div class="section-5-item section-5-item-hidden">
+              <img
+                class="section-5-item-img"
+                srcset="
                 ./image/section-5/section-5-img.jpg x1,
                 ./image/section-5/section-5-img@2x.jpg x2
               "
-              src="./image/section-5/section-5-img.jpg"
-              alt=""
-            />
-            <ul>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-              <li class="section-5-list-item">
-                Road Design Handbook For The International Road...
-              </li>
-              <li class="section-5-list-item">
-                The Best Kept Secrets About Creative People
-              </li>
-              <li class="section-5-list-item">
-                We Make It Easy To Find The Great Design Talent, Easier...
-              </li>
-            </ul>
+                src="./image/section-5/section-5-img.jpg"
+                alt=""
+              />
+              <ul>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+                <li class="section-5-list-item">
+                  Road Design Handbook For The International Road...
+                </li>
+                <li class="section-5-list-item">
+                  The Best Kept Secrets About Creative People
+                </li>
+                <li class="section-5-list-item">
+                  We Make It Easy To Find The Great Design Talent, Easier...
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -469,8 +474,8 @@
         </nav>
       </div>
     </footer>
-    <div class="mobile-menu" data-modal>
-      <button class="mob-close-menu-btn" type="button" data-modal-close>
+    <div class="mobile-menu">
+      <button class="mob-close-menu-btn" type="button">
         <svg class="mob-close-menu-btn-icon" width="20" height="20">
           <use href="./image/symbol-defs.svg#icon-close-btn"></use>
         </svg>
@@ -478,14 +483,14 @@
       <ul class="mobile-nav-link-list">
         <li><a class="mobile-nav-link-list-item" href="">all products</a></li>
         <li class="mobile-solutions-item">
-          <label class="mobile-solutions-label" for="mobile-solutions"
-            >Solutions</label
-          >
-          <input
+          <button class="mobile-solutions-label" type="button">
+            Solutions
+          </button>
+          <!-- <input
             class="mobile-solutions-input"
             type="checkbox"
             id="mobile-solutions"
-          />
+          /> -->
           <ul class="mobile-solutions-list">
             <li class="mobile-solutions-list-item">
               <a href="">Something</a>
@@ -505,6 +510,5 @@
       </ul>
       <img class="mob-menu-img" src="./image/mob-menu-img.gif" alt="" />
     </div>
-    <script src="./js/mob-menu.js"></script>
   </body>
 </html>

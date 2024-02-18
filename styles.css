@@ -530,35 +530,12 @@ text-align: center;
         margin-bottom: 56px;
 }
 
-.see-all-checkbox {
+/* .see-all-checkbox {
     display: none;
-}
+} */
 
 .close-all-text {
     display: none;
-}
-
-.see-all-checkbox:checked ~ .section-5-item-hidden {
-visibility: visible;
-pointer-events: all;
-transform: translate(0, 0);
-position: static;
-}
-
-
-.see-all-fake {
-    display: block;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80px;
-    position: relative;
-}
-
-.see-all-svg {
-    position: absolute;
-    top: -3px;
-    transform: rotate(90deg);
 }
 
 .section-5-item-hidden {
@@ -568,6 +545,35 @@ position: static;
     transition: transform 500ms ease-in-out;
     transform: translate(0, -100%);
 }
+
+.is-visible {
+visibility: visible;
+pointer-events: all;
+transform: translate(0, 0);
+position: static;
+}
+
+
+.see-all-btn {
+    width: 150px;
+    background-color: #C5C5C5;
+    border: 1px solid transparent;
+    outline: transparent;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.see-all-svg {
+    transform: rotate(90deg);
+}
+
 
 .section-5-item {
     display: flex;
@@ -792,6 +798,7 @@ display: flex;
         letter-spacing: 0;
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
 
     .mob-menu-open-btn-icon {
@@ -807,6 +814,7 @@ display: flex;
         position: absolute;
         top: 15px;
         right: 15px;
+        cursor: pointer;
     }
 
     .mob-close-menu-btn-icon {
@@ -827,6 +835,13 @@ display: flex;
         .mobile-solutions-label {
             cursor: pointer;
             transition: color 250ms ease-in-out;
+            border: 1px solid transparent;
+            outline: transparent;
+            background-color: transparent;
+                font-size: 20px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
         }
 
     
@@ -853,8 +868,10 @@ display: flex;
             top: 0px;
             visibility: hidden;
             pointer-events: none;
+            text-align: center;
+            
         }
- .mobile-solutions-input:checked ~ .mobile-solutions-list {
+ .mobile-solutions-list-visible {
      visibility: visible;
      pointer-events: all;
      position: static;
