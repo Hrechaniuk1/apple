@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/search.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <a class="logo-link" href="./index.html">
+            <svg class="logo-icon" width="170" height="21">
+              <use href="./image/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="mob-menu-open-btn" type="button">
+            <svg class="mob-menu-open-btn-icon" width="30" height="30">
+              <use href="./image/symbol-defs.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
+          <ul class="main-nav-link-list">
+            <li>
+              <a class="main-nav-link-list-item" href="./products.html"
+                >all products</a
+              >
+            </li>
+            <li class="solutions-item">
+              <label class="solutions-label" for="solutions">Solutions</label>
+              <input class="solutions-input" type="checkbox" id="solutions" />
+              <ul class="solutions-list">
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+              </ul>
+            </li>
+            <li><a class="main-nav-link-list-item" href="">ABOUT</a></li>
+            <li><a class="main-nav-link-list-item" href="">Support</a></li>
+          </ul>
+          <ul class="main-nav-icon-list">
+            <li>
+              <a class="main-nav-icon-list-link" href="">
+                <svg class="main-nav-icon" width="24" height="24">
+                  <use href="./image/symbol-defs.svg#icon-search-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="main-nav-icon-list-link" href="">
+                <svg class="main-nav-icon" width="24" height="24">
+                  <use href="./image/symbol-defs.svg#icon-cart-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section-6">
+      <div class="container">
+        <h2 class="section-6-title">Looking for anything else?</h2>
+        <form class="search-container">
+          <input
+            class="section-6-search"
+            type="search"
+            placeholder="Search keyword"
+            name="search"
+          />
+          <button class="search-btn" type="submit">
+            <svg class="search-icon" width="30" height="30">
+              <use href="./image/symbol-defs.svg#icon-search-icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="container">
+        <h2 class="section-3-title">Save on our most selled items.</h2>
+        <p class="section-3-description">
+          Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+        </p>
+        <ul class="section-3-product-list">
+          <li class="section-3-product-list-item">
+            <div class="product-list-img-container">
+              <img
+                srcset="
+                  ./image/section-3/section-3-laptop.png x1,
+                  ./image/section-3/section-3-laptop@2x.png x2
+                "
+                src="./image/section-3/section-3-laptop.png"
+                alt=""
+              />
+            </div>
+            <h3 class="product-list-item-name">MacBook Pro 13</h3>
+            <p class="product-list-item-description">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+            </p>
+            <p class="product-list-item-price">$ 1,200.00 USD</p>
+          </li>
+          <li class="section-3-product-list-item">
+            <div class="product-list-img-container">
+              <img
+                srcset="./image/section-3/section-3-watch.png x1, ./image/section-3/section-3-watch@2x.png x2"
+                src="./image/section-3/section-3-watch.png"
+                alt=""
+              />
+            </div>
+            <h3 class="product-list-item-name">Smart Galaxy Watch 3</h3>
+            <p class="product-list-item-description">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p class="product-list-item-price">$ 199.00 USD</p>
+          </li>
+          <li class="section-3-product-list-item">
+            <div class="product-list-img-container">
+              <img
+                srcset="
+                  ./image/section-3/section-3-macair.png    1x,
+                  ./image/section-3/section-3-macair@2x.png 2x
+                "
+                src="./image/section-3/section-3-macair.png"
+                alt=""
+              />
+            </div>
+            <h3 class="product-list-item-name">MacBook Air M1</h3>
+            <p class="product-list-item-description">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p class="product-list-item-price">$ 1,009.00 USD</p>
+          </li>
+          <li class="section-3-product-list-item">
+            <div class="product-list-img-container">
+              <img
+                srcset="./image/section-3/section-3-tablet.png x1, ./image/section-3/section-3-tablet@2x.png x2"
+                src="./image/section-3/section-3-tablet.png"
+                alt=""
+              />
+            </div>
+            <h3 class="product-list-item-name">iPad</h3>
+            <p class="product-list-item-description">
+              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+              consectetur, adipisci velit...
+            </p>
+            <p class="product-list-item-price">$ 610.00 USD</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <title>Apple</title>
+    <script src="./js/search-main.js" type="module" defer></script>
     <script src="./js/select-menu.js" type="module" defer></script>
     <script src="./js/mob-menu.js" type="module" defer></script>
     <script src="./js/see-all.js" type="module" defer></script>
@@ -34,7 +35,11 @@
             </svg>
           </button>
           <ul class="main-nav-link-list">
-            <li><a class="main-nav-link-list-item" href="">all products</a></li>
+            <li>
+              <a class="main-nav-link-list-item" href="./products.html"
+                >all products</a
+              >
+            </li>
             <li class="solutions-item">
               <label class="solutions-label" for="solutions">Solutions</label>
               <input class="solutions-input" type="checkbox" id="solutions" />
@@ -49,7 +54,7 @@
           </ul>
           <ul class="main-nav-icon-list">
             <li>
-              <a class="main-nav-icon-list-link" href="">
+              <a class="main-nav-icon-list-link" href="#sixth">
                 <svg class="main-nav-icon" width="24" height="24">
                   <use href="./image/symbol-defs.svg#icon-search-icon"></use>
                 </svg>
@@ -80,7 +85,9 @@
     </section>
     <section class="section-2">
       <div class="container">
-        <h2 class="section-2-title">Shop our latest offers and categories</h2>
+        <h2 class="section-2-title" id="second">
+          Shop our latest offers and categories
+        </h2>
         <p class="section-2-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor
@@ -156,12 +163,14 @@
     </section>
     <section class="section-3">
       <div class="container">
-        <h2 class="section-3-title">Save on our most selled items.</h2>
+        <h2 class="section-3-title" id="third">
+          Save on our most selled items.
+        </h2>
         <p class="section-3-description">
           Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
         </p>
         <ul class="section-3-product-list">
-          <li class="section-3-product-list-item">
+          <li class="section-3-product-list-item" id="one">
             <div class="product-list-img-container">
               <img
                 srcset="
@@ -178,7 +187,7 @@
             </p>
             <p class="product-list-item-price">$ 1,200.00 USD</p>
           </li>
-          <li class="section-3-product-list-item">
+          <li class="section-3-product-list-item" id="two">
             <div class="product-list-img-container">
               <img
                 srcset="./image/section-3/section-3-watch.png x1, ./image/section-3/section-3-watch@2x.png x2"
@@ -193,7 +202,7 @@
             </p>
             <p class="product-list-item-price">$ 199.00 USD</p>
           </li>
-          <li class="section-3-product-list-item">
+          <li class="section-3-product-list-item" id="three">
             <div class="product-list-img-container">
               <img
                 srcset="
@@ -211,7 +220,7 @@
             </p>
             <p class="product-list-item-price">$ 1,009.00 USD</p>
           </li>
-          <li class="section-3-product-list-item">
+          <li class="section-3-product-list-item" id="four">
             <div class="product-list-img-container">
               <img
                 srcset="./image/section-3/section-3-tablet.png x1, ./image/section-3/section-3-tablet@2x.png x2"
@@ -231,7 +240,7 @@
     </section>
     <section class="section-4">
       <div class="container">
-        <h2 class="section-4-title">See the best around here</h2>
+        <h2 class="section-4-title" id="fourth">See the best around here</h2>
         <p class="section-4-description">
           Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
         </p>
@@ -283,7 +292,7 @@
     </section>
     <section class="section-5">
       <div class="container">
-        <h2 class="section-5-title">Ideas have a place here</h2>
+        <h2 class="section-5-title" id="fifth">Ideas have a place here</h2>
         <p class="section-5-description">
           Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
         </p>
@@ -382,23 +391,26 @@
     </section>
     <section class="section-6">
       <div class="container">
-        <h2 class="section-6-title">Looking for anything else?</h2>
-        <div class="search-container">
+        <h2 class="section-6-title" id="sixth">Looking for anything else?</h2>
+        <form class="search-container">
           <input
             class="section-6-search"
             type="search"
             placeholder="Search keyword"
+            name="search"
           />
-          <svg class="search-icon" width="30" height="30">
-            <use href="./image/symbol-defs.svg#icon-search-icon"></use>
-          </svg>
-        </div>
+          <button class="search-btn" type="submit">
+            <svg class="search-icon" width="30" height="30">
+              <use href="./image/symbol-defs.svg#icon-search-icon"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </section>
     <section class="section-7">
       <div class="container">
         <div class="section-7-add-container">
-          <h2 class="section-7-title">Never miss a thing</h2>
+          <h2 class="section-7-title" id="seventh">Never miss a thing</h2>
           <p class="section-7-description">
             Sign up for texts to be notified about our best offers on the
             perfect gifts.

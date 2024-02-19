@@ -628,11 +628,20 @@ line-height: 1.25;
 }
 
 .search-icon {
-    position: absolute;
-    top: 15px;
-    left: 25px;
     fill: none;
     stroke: #000000;
+}
+
+.search-btn {
+    position: absolute;
+        top: 15px;
+        left: 25px;
+    width: 32px;
+    height: 32px;
+    outline: transparent;
+    border: solid 1px transparent;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /* =====================section 7=================== */
@@ -975,4 +984,8 @@ padding-left: 15    px;
         .section-2-list-1-item-2 {
             flex-wrap: wrap;
         }
+}
+/*  */
+.is-hidden-item {
+    display: none;
 }
