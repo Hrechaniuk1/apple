@@ -989,3 +989,8 @@ padding-left: 15    px;
 .is-hidden-item {
     display: none;
 }
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+}

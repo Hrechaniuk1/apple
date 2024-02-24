@@ -78,16 +78,36 @@
             </svg>
           </button>
         </form>
-        <div class="filter-container">
-          <p>Price sort</p>
-          <input class="filter-up" type="radio" name="filter" />
-          <input class="filter-down" type="radio" name="filter" />
-        </div>
-        <div class="filter-brand-container">
-          <p>Filter by brand</p>
-          <input class="filter-apple" type="radio" name="brand" />
-          <input class="filter-acer" type="radio" name="brand" />
-          <input class="filter-lenovo" type="radio" name="brand" />
+        <div class="filter-sort">
+          <form class="filter-form">
+            <select name="brand" id="brand-id">
+              <optgroup>
+                <option value="no-brand">Brand</option>
+                <option value="apple">apple</option>
+                <option value="acer">acer</option>
+                <option value="samsung">samsung</option>
+                <option value="ferrari">ferrari</option>
+                <option value="lenovo">lenovo</option>
+              </optgroup>
+            </select>
+            <select name="color" id="color-id">
+              <optgroup>
+                <option value="no-color">Color</option>
+                <option value="red">red</option>
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+              </optgroup>
+            </select>
+            <button type="submit">filter</button>
+          </form>
+          <select class="sortFeature" name="sorted" id="sort-id">
+            <optgroup>
+              <option value="no-sort">sort</option>
+              <option value="min-to-max">min to max</option>
+              <option value="max-to-min">max to min</option>
+            </optgroup>
+          </select>
         </div>
       </div>
     </section>
