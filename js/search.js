@@ -18,6 +18,7 @@ createShop(allProducrts)
 
 // do search
 htmlTags.searchForm.addEventListener("submit", doSearch)
+htmlTags.searchFormNav.addEventListener("submit", doSearch)
 
 
 function doSearch(event) {
@@ -26,13 +27,13 @@ function doSearch(event) {
 const searchResult = []
     for (const product of allProducrts) {
 
-            if (product.name.toUpperCase().includes(htmlTags.searchForm.elements.search.value.toUpperCase().trim())) {
+            if (product.name.toUpperCase().includes(event.target.elements.search.value.toUpperCase().trim())) {
                 searchResult.push(product)
                 createShop(searchResult)
         } 
         
     }
-    htmlTags.searchForm.reset()
+    event.target.elements.search.value = ""
     
 }
 
