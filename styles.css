@@ -985,12 +985,65 @@ padding-left: 15    px;
             flex-wrap: wrap;
         }
 }
-/*  */
+/* products */
 .is-hidden-item {
     display: none;
 }
 
 .filter-sort {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
     justify-content: space-between;
+    margin-top: 40px;
+    background-color: #F8F9FA;
+    padding: 30px 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+.filter-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-form select, .sortFeature{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid bisque;
+    color: #4B4B4B;
+    outline: transparent;
+    transition: border 250ms ease-in-out;
+}
+
+.filter-form select:hover,
+.sortFeature:hover {
+    border: 1px solid rgb(237, 201, 157);
+}
+
+.filter-form button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    outline: transparent;
+    transition: background-color 250ms ease-in-out;
+}
+
+.filter-form button:hover {
+    background-color: #C5C5C5;
+}
+
+/* search in nav */
+.for-search-in-nav {
+    position: relative;
+}
+
+.search-in-nav-form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    min-width: 350px;
 }

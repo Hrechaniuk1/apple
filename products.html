@@ -44,12 +44,27 @@
             <li><a class="main-nav-link-list-item" href="">Support</a></li>
           </ul>
           <ul class="main-nav-icon-list">
-            <li>
-              <a class="main-nav-icon-list-link" href="">
+            <li class="for-search-in-nav">
+              <a class="main-nav-icon-list-link search-icon-btn" href="">
                 <svg class="main-nav-icon" width="24" height="24">
                   <use href="./image/symbol-defs.svg#icon-search-icon"></use>
                 </svg>
               </a>
+              <!--  -->
+              <form class="search-container search-in-nav-form is-hidden-item">
+                <input
+                  class="section-6-search"
+                  type="search"
+                  placeholder="Search keyword"
+                  name="search"
+                />
+                <button class="search-btn" type="submit">
+                  <svg class="search-icon" width="30" height="30">
+                    <use href="./image/symbol-defs.svg#icon-search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+              <!--  -->
             </li>
             <li>
               <a class="main-nav-icon-list-link" href="">
@@ -80,7 +95,7 @@
         </form>
         <div class="filter-sort">
           <form class="filter-form">
-            <select name="brand" id="brand-id">
+            <select class="brand-name" name="brand" id="brand-id">
               <optgroup>
                 <option value="no-brand">Brand</option>
                 <option value="apple">apple</option>
@@ -97,9 +112,15 @@
                 <option value="black">black</option>
                 <option value="blue">blue</option>
                 <option value="green">green</option>
+              </optgroup></select
+            ><select name="model" id="model-id">
+              <optgroup class="model-option-list">
+                <option value="no-model">Model</option>
               </optgroup>
             </select>
+
             <button type="submit">filter</button>
+            <button class="reset" type="button">Reset filters</button>
           </form>
           <select class="sortFeature" name="sorted" id="sort-id">
             <optgroup>
