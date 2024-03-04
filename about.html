@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Apple</title>
+    <script src="./js/slider.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <a class="logo-link" href="./index.html">
+            <svg class="logo-icon" width="170" height="21">
+              <use href="./image/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="mob-menu-open-btn" type="button">
+            <svg class="mob-menu-open-btn-icon" width="30" height="30">
+              <use href="./image/symbol-defs.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
+          <ul class="main-nav-link-list">
+            <li>
+              <a class="main-nav-link-list-item" href="./products.html"
+                >all products</a
+              >
+            </li>
+            <li class="solutions-item">
+              <label class="solutions-label" for="solutions">Solutions</label>
+              <input class="solutions-input" type="checkbox" id="solutions" />
+              <ul class="solutions-list">
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+                <li class="solutions-list-item"><a href="">Something</a></li>
+              </ul>
+            </li>
+            <li><a class="main-nav-link-list-item" href="">ABOUT</a></li>
+            <li><a class="main-nav-link-list-item" href="">Support</a></li>
+          </ul>
+          <ul class="main-nav-icon-list">
+            <li>
+              <a class="main-nav-icon-list-link" href="#sixth">
+                <svg class="main-nav-icon" width="24" height="24">
+                  <use href="./image/symbol-defs.svg#icon-search-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="main-nav-icon-list-link" href="">
+                <svg class="main-nav-icon" width="24" height="24">
+                  <use href="./image/symbol-defs.svg#icon-cart-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="slider-box">
+        <div class="slider-list">
+          <div class="slider-image-container">
+            <img
+              class="slider-image"
+              src="./image/section-2/section-2-img-belt.png"
+              alt=""
+            />
+          </div>
+          <div class="slider-image-container">
+            <img
+              class="slider-image"
+              src="./image/section-2/section-2-img-iphone.png"
+              alt=""
+            />
+          </div>
+          <div class="slider-image-container">
+            <img
+              class="slider-image"
+              src="./image/section-2/section-2-img-laptop.png"
+              alt=""
+            />
+          </div>
+          <div class="slider-image-container">
+            <img
+              class="slider-image"
+              src="./image/section-2/section-2-img-tablet.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <button class="btn-slider-prev">></button>
+        <button class="btn-slider-next">></button>
+      </div>
+    </section>
+  </body>
+</html>
