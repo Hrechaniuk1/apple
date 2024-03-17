@@ -393,6 +393,13 @@ text-align: center;
     justify-content: center;
 }
 
+.basket-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 27px;
+        justify-content: center;
+}
+
 .section-3-product-list-item {
     flex-basis: calc((100% - 81px) / 4);
     min-width: 200px;
@@ -1120,4 +1127,18 @@ animation: filter-animation 5s ease infinite;
  .btn-slider-next {
     top: 50%;
     right: 0;
+ }
+
+ /* basket */
+ .total-price-container {
+    display: block;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 700;
+
  }

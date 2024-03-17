@@ -43,7 +43,6 @@ let supportForSort = allProducrts
 htmlTags.sortFeature.addEventListener("change", doSort)
 
 function doSort(event) {
-    // if (supportForSort) {
         if (event.target.value === "min-to-max") {
             const sortProps = supportForSort.toSorted((a, b) => a.price - b.price)
             createShop(sortProps)
@@ -53,18 +52,6 @@ function doSort(event) {
         } else {
             createShop(supportForSort)
         }
-    // }
-    // else {
-    //     if (event.target.value === "min-to-max") {
-    //         const sortProps = allProducrts.toSorted((a, b) => a.price - b.price)
-    //         createShop(sortProps)
-    //     } else if (event.target.value === "max-to-min") {
-    //         const sortProps = allProducrts.toSorted((a, b) => b.price - a.price)
-    //         createShop(sortProps)
-    //     } else {
-    //         createShop(allProducrts)
-    //     }
-    // }
 }
 
 // model markup create
@@ -123,7 +110,7 @@ supportForSort = filteredTotal
 // reset 
 htmlTags.resetFilters.addEventListener("click", doReset)
 
-function doReset() {
+function doReset(event) {
     htmlTags.filterForm.reset()
     createShop(allProducrts)
     supportForSort = allProducrts
@@ -166,4 +153,24 @@ function openModalSearch(event) {
 
     
 }
+
+//
+
+
+const propHTMLList = document.querySelector(".section-3-product-list")
+
+propHTMLList.addEventListener("click", testFoo)
+const dataFromStorage = JSON.parse(localStorage.getItem("propList"))
+let choosedProp = dataFromStorage ?? []
+
+function testFoo(event) {
+    if (event.target.nodeName === "BUTTON") {
+        choosedProp.push(event.target.closest("li").dataset.id)
+        localStorage.setItem("propList", JSON.stringify(choosedProp))
+        console.log(localStorage.getItem("propList"))
+    }
+ }
+
+
+
 
