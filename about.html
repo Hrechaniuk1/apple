@@ -16,6 +16,7 @@
     />
     <title>Apple</title>
     <script src="./js/slider.js" type="module" defer></script>
+    <script src="./js/mob-menu.js" type="module" defer></script>
   </head>
   <body>
     <header class="header">
@@ -46,19 +47,16 @@
                 <li class="solutions-list-item"><a href="">Something</a></li>
               </ul>
             </li>
-            <li><a class="main-nav-link-list-item" href="">ABOUT</a></li>
-            <li><a class="main-nav-link-list-item" href="">Support</a></li>
+            <li>
+              <a class="main-nav-link-list-item" href="./about.html">ABOUT</a>
+            </li>
+            <li>
+              <a class="main-nav-link-list-item" href=" ">Support</a>
+            </li>
           </ul>
           <ul class="main-nav-icon-list">
             <li>
-              <a class="main-nav-icon-list-link" href="#sixth">
-                <svg class="main-nav-icon" width="24" height="24">
-                  <use href="./image/symbol-defs.svg#icon-search-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="main-nav-icon-list-link" href="">
+              <a class="main-nav-icon-list-link" href="./backet.html">
                 <svg class="main-nav-icon" width="24" height="24">
                   <use href="./image/symbol-defs.svg#icon-cart-icon"></use>
                 </svg>
@@ -68,41 +66,46 @@
         </nav>
       </div>
     </header>
-    <section>
-      <div class="slider-box">
-        <div class="slider-list">
-          <div class="slider-image-container">
-            <img
-              class="slider-image"
-              src="./image/section-2/section-2-img-belt.png"
-              alt=""
-            />
-          </div>
-          <div class="slider-image-container">
-            <img
-              class="slider-image"
-              src="./image/section-2/section-2-img-iphone.png"
-              alt=""
-            />
-          </div>
-          <div class="slider-image-container">
-            <img
-              class="slider-image"
-              src="./image/section-2/section-2-img-laptop.png"
-              alt=""
-            />
-          </div>
-          <div class="slider-image-container">
-            <img
-              class="slider-image"
-              src="./image/section-2/section-2-img-tablet.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <button class="btn-slider-prev">></button>
-        <button class="btn-slider-next">></button>
-      </div>
-    </section>
+    <section></section>
+    <div class="mobile-menu">
+      <button class="mob-close-menu-btn" type="button">
+        <svg class="mob-close-menu-btn-icon" width="20" height="20">
+          <use href="./image/symbol-defs.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-link-list">
+        <li>
+          <a class="mobile-nav-link-list-item" href="./products.html"
+            >all products</a
+          >
+        </li>
+        <li class="mobile-solutions-item">
+          <button class="mobile-solutions-label" type="button">
+            Solutions
+          </button>
+          <!-- <input
+            class="mobile-solutions-input"
+            type="checkbox"
+            id="mobile-solutions"
+          /> -->
+          <ul class="mobile-solutions-list">
+            <li class="mobile-solutions-list-item">
+              <a href="">Something</a>
+            </li>
+            <li class="mobile-solutions-list-item">
+              <a href="">Something</a>
+            </li>
+            <li class="mobile-solutions-list-item">
+              <a href="">Something</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="mobile-nav-link-list-item" href="./about.html">ABOUT</a>
+        </li>
+        <li><a class="mobile-nav-link-list-item" href="">Support</a></li>
+      </ul>
+      <img class="mob-menu-img" src="./image/mob-menu-img.gif" alt="" />
+    </div>
   </body>
 </html>

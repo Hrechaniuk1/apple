@@ -19,6 +19,7 @@
     <script src="./js/select-menu.js" type="module" defer></script>
     <script src="./js/mob-menu.js" type="module" defer></script>
     <script src="./js/see-all.js" type="module" defer></script>
+    <script src="./js/slider.js" type="module" defer></script>
   </head>
   <body>
     <header class="header">
@@ -53,7 +54,7 @@
               <a class="main-nav-link-list-item" href="./about.html">ABOUT</a>
             </li>
             <li>
-              <a class="main-nav-link-list-item" href="./backet.html">Basket</a>
+              <a class="main-nav-link-list-item" href=" ">Support</a>
             </li>
           </ul>
           <ul class="main-nav-icon-list">
@@ -65,7 +66,7 @@
               </a>
             </li>
             <li>
-              <a class="main-nav-icon-list-link" href="">
+              <a class="main-nav-icon-list-link" href="./backet.html">
                 <svg class="main-nav-icon" width="24" height="24">
                   <use href="./image/symbol-defs.svg#icon-cart-icon"></use>
                 </svg>
@@ -168,78 +169,80 @@
     <section class="section-3">
       <div class="container">
         <h2 class="section-3-title" id="third">
-          Save on our most selled items.
-        </h2>
-        <p class="section-3-description">
-          Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
-        </p>
-        <ul class="section-3-product-list">
-          <li class="section-3-product-list-item" id="one">
-            <div class="product-list-img-container">
-              <img
-                srcset="
+              Save on our most selled items.
+            </h2>
+            <p class="section-3-description">
+              Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+            </p>
+            <ul class=" slider-box">
+              <div class="slider-list">
+              <li class="section-3-product-list-item slider-image-container" id="one">
+                <div class="product-list-img-container">
+                  <img
+                    srcset="
                   ./image/section-3/section-3-laptop.png x1,
                   ./image/section-3/section-3-laptop@2x.png x2
                 "
-                src="./image/section-3/section-3-laptop.png"
-                alt=""
-              />
-            </div>
-            <h3 class="product-list-item-name">MacBook Pro 13</h3>
-            <p class="product-list-item-description">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
-            </p>
-            <p class="product-list-item-price">$ 1,200.00 USD</p>
-          </li>
-          <li class="section-3-product-list-item" id="two">
-            <div class="product-list-img-container">
-              <img
-                srcset="./image/section-3/section-3-watch.png x1, ./image/section-3/section-3-watch@2x.png x2"
-                src="./image/section-3/section-3-watch.png"
-                alt=""
-              />
-            </div>
-            <h3 class="product-list-item-name">Smart Galaxy Watch 3</h3>
-            <p class="product-list-item-description">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit...
-            </p>
-            <p class="product-list-item-price">$ 199.00 USD</p>
-          </li>
-          <li class="section-3-product-list-item" id="three">
-            <div class="product-list-img-container">
-              <img
-                srcset="
-                  ./image/section-3/section-3-macair.png    1x,
-                  ./image/section-3/section-3-macair@2x.png 2x
-                "
-                src="./image/section-3/section-3-macair.png"
-                alt=""
-              />
-            </div>
-            <h3 class="product-list-item-name">MacBook Air M1</h3>
-            <p class="product-list-item-description">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit...
-            </p>
-            <p class="product-list-item-price">$ 1,009.00 USD</p>
-          </li>
-          <li class="section-3-product-list-item" id="four">
-            <div class="product-list-img-container">
-              <img
-                srcset="./image/section-3/section-3-tablet.png x1, ./image/section-3/section-3-tablet@2x.png x2"
-                src="./image/section-3/section-3-tablet.png"
-                alt=""
-              />
-            </div>
-            <h3 class="product-list-item-name">iPad</h3>
-            <p class="product-list-item-description">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit...
-            </p>
-            <p class="product-list-item-price">$ 610.00 USD</p>
-          </li>
-        </ul>
+                    src="./image/section-3/section-3-laptop.png"
+                    alt=""
+                  />
+                </div>
+                <h3 class="product-list-item-name">MacBook Pro 13</h3>
+                <p class="product-list-item-description">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                </p>
+                <p class="product-list-item-price">$ 1,200.00 USD</p>
+              </li>
+              <li class="section-3-product-list-item slider-image-container" id="two">
+                <div class="product-list-img-container">
+                  <img
+                    srcset="./image/section-3/section-3-watch.png x1, ./image/section-3/section-3-watch@2x.png x2"
+                    src="./image/section-3/section-3-watch.png"
+                    alt=""
+                  />
+                </div>
+                <h3 class="product-list-item-name">Galaxy Watch 3</h3>
+                <p class="product-list-item-description">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+                <p class="product-list-item-price">$ 199.00 USD</p>
+              </li>
+              <li class="section-3-product-list-item slider-image-container" id="three">
+                <div class="product-list-img-container">
+                  <img
+                    srcset="
+                      ./image/section-3/section-3-macair.png    1x,
+                      ./image/section-3/section-3-macair@2x.png 2x
+                    "
+                    src="./image/section-3/section-3-macair.png"
+                    alt=""
+                  />
+                </div>
+                <h3 class="product-list-item-name">MacBook Air M1</h3>
+                <p class="product-list-item-description">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+                <p class="product-list-item-price">$ 1,009.00 USD</p>
+              </li>
+              <li class="section-3-product-list-item slider-image-container" id="four">
+                <div class="product-list-img-container">
+                  <img
+                    srcset="./image/section-3/section-3-tablet.png x1, ./image/section-3/section-3-tablet@2x.png x2"
+                    src="./image/section-3/section-3-tablet.png"
+                    alt=""
+                  />
+                </div>
+                <h3 class="product-list-item-name">iPad</h3>
+                <p class="product-list-item-description">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                  amet, consectetur, adipisci velit...
+                </p>
+                <p class="product-list-item-price">$ 610.00 USD</p>
+              </li>
+            </ul>
+          </div>
       </div>
     </section>
     <section class="section-4">
@@ -524,7 +527,7 @@
           </ul>
         </li>
         <li>
-          <a class="mobile-nav-link-list-item" href="">ABOUT</a>
+          <a class="mobile-nav-link-list-item" href="./about.html">ABOUT</a>
         </li>
         <li><a class="mobile-nav-link-list-item" href="">Support</a></li>
       </ul>

@@ -9,13 +9,17 @@ document.addEventListener("DOMContentLoaded", createShop)
 
 function createShop() {
     basketProps = []
-    dataFromStorage = JSON.parse(localStorage.getItem("propList"))
-    dataFromStorageNumber = dataFromStorage.map((prop) => +prop)
-    for (const prod of allProducrts) {
+  dataFromStorage = JSON.parse(localStorage.getItem("propList"))
+  if(dataFromStorage) {dataFromStorageNumber = dataFromStorage.map((prop) => +prop)
+  for (const prod of allProducrts) {
     if (dataFromStorageNumber.includes(prod.id)) {
-        basketProps.push(prod)
- }
-}
+      
+      basketProps.push(prod)
+    }}
+    
+  }
+  
+  console.log(basketProps)
     const htmlProducts = basketProps.map(prod => `<li class="section-3-product-list-item" data-price="${prod.price}" data-id="${prod.id}" data-brand="${prod.brand}">
             <div class="product-list-img-container">
             <img src="https://cdn.pixabay.com/photo/2020/05/07/15/11/farm-5141889_1280.png" alt="prop" width="200">
