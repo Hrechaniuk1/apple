@@ -2,12 +2,12 @@ const sliderBox = document.querySelector(".slider-box")
 const sliderList = document.querySelector(".slider-list")
 const sliderImg = document.querySelectorAll(".slider-image-container")
 
+// ------------------------------------------------------------------
 
 let counter = 0
-
 let sliderWidth = sliderBox.offsetWidth
 
-
+// ------------------------------------------------------------------
 
 function nextSlide(event) {
     counter++

@@ -1,10 +1,10 @@
 const searchForm = document.querySelector(".search-container")
 
+// ------------------------------------------------------------------
 
 searchForm.addEventListener("submit", doSearch)
 
-
-
+// ------------------------------------------------------------------
 
 function doSearch(event) {
     event.preventDefault()

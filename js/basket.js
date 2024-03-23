@@ -1,11 +1,18 @@
 import allProducrts from "./props.js"
+
+// -----------------------------------------------------------------------------
+
 const basket = document.querySelector(".basket-list")
 let dataFromStorage
 let dataFromStorageNumber 
 let basketProps = []
 
+// -----------------------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", createShop)
+basket.addEventListener("click", doDel)
+
+// -----------------------------------------------------------------------------
 
 function createShop() {
     basketProps = []
@@ -18,8 +25,6 @@ function createShop() {
     }}
     
   }
-  
-  console.log(basketProps)
     const htmlProducts = basketProps.map(prod => `<li class="section-3-product-list-item" data-price="${prod.price}" data-id="${prod.id}" data-brand="${prod.brand}">
             <div class="product-list-img-container">
             <img src="https://cdn.pixabay.com/photo/2020/05/07/15/11/farm-5141889_1280.png" alt="prop" width="200">
@@ -41,7 +46,6 @@ totalPrice.textContent = basketProps.reduce((acc, prop) => acc + +prop.price,0)
 }
 
 
-basket.addEventListener("click", doDel)
 
 function doDel(event) {
     if (event.target.nodeName === "BUTTON") {

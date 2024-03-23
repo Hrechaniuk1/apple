@@ -1,6 +1,8 @@
 import allProducrts from "./props.js"
 import createShop from "./props-mark-up.js"
 
+// ------------------------------------------------------------------
+
 // html tags
 const htmlTags = {
     searchForm: document.querySelector(".search-form-main"),
@@ -165,6 +167,9 @@ let choosedProp = dataFromStorage ?? []
 
 function testFoo(event) {
     if (event.target.nodeName === "BUTTON") {
+        if (choosedProp.includes(event.target.closest("li").dataset.id)) {
+            return
+        }
         choosedProp.push(event.target.closest("li").dataset.id)
         localStorage.setItem("propList", JSON.stringify(choosedProp))
         console.log(localStorage.getItem("propList"))

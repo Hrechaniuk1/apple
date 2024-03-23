@@ -1118,3 +1118,11 @@ animation: filter-animation 5s ease infinite;
     font-weight: 700;
 
  }
+
+ /* props page */
+
+ .section-3-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
